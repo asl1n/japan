@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASN Abroad Study Nepal - Services</title>
+    <link rel="stylesheet" href="service.css" />
+    <link rel="stylesheet" href="../../global.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f9fafb;
+      }
+      .lg\:timeline-line::before {
+        content: "";
+        position: absolute;
+        top: 160px; /* For mathi ko line */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 3px;
+        height: calc(100% - 300px); /* Change here tala ko line ghatauna */
+        z-index: 1;
+        background-color: #76b0f7;
+      }
+      @media (max-width: 1023px) {
+        .lg\:timeline-line::before {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="nav-brand">
+          <img
+            src="../../assests/logo.png"
+            alt="ASN Study Abroad"
+            class="logo"
+          />
+        </div>
+        <nav class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li>
+              <a href="../../homepage/index.html" class="nav-link">Home</a>
+            </li>
+            <li><a href="../about/about.html" class="nav-link">About Us</a></li>
+            <li><a href="#services" class="nav-link active">Services</a></li>
+            <li><a href="#success" class="nav-link">Success Stories</a></li>
+            <li><a href="../blog/blog.html" class="nav-link">Others</a></li>
+          </ul>
+        </nav>
+        <button class="contact-btn">Contact Us</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Services We Offer</h1>
+          <p>
+            We guide your journey to Japan with personalized support at every
+            step.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Timeline Section -->
+    <!-- <section class="services-section" id="services">
+            <div class="container">
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="service-item">
+                        <div class="service-content">
+                            <h3>Language Preparation</h3>
+                            <p>Our comprehensive language training programs are designed to equip you with the Japanese language skills necessary to succeed in your academic journey. We offer structured courses that focus on practical communication skills, with emphasis on speaking, listening, reading, and writing. Our experienced instructors use interactive teaching methods to ensure you gain confidence in using Japanese in real-world situations.</p>
+                        </div>
+                        <div class="service-icon"></div>
+                        <div class="service-image">
+                            <img src="../../assests/classroom.png" alt="Language Preparation Classroom">
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-content">
+                            <h3>Documentation Support</h3>
+                            <p>Navigating Japanese documentation can be tricky, especially with language and format differences. Our expert team will guide you through each step of the documentation process, ensuring all your paperwork is accurate, complete, and submitted on time. We provide comprehensive support for visa applications, university admissions, and other essential documents.</p>
+                        </div>
+                        <div class="service-icon"></div>
+                        <div class="service-image">
+                            <img src="../../assests/ser-2.png" alt="Documentation Support">
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-content">
+                            <h3>University Matching</h3>
+                            <p>Finding the right university is crucial for your academic success. We carefully analyze your academic background, career goals, and personal preferences to match you with the most suitable Japanese universities. Our extensive database and partnerships with top institutions ensure you get the best opportunities aligned with your aspirations.</p>
+                        </div>
+                        <div class="service-icon"></div>
+                        <div class="service-image">
+                            <img src="../../assests/ser-3.png" alt="University Campus">
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-content">
+                            <h3>Interview Preparation</h3>
+                            <p>University and embassy interviews are critical, and we help you master them. Through role-playing sessions, mock interviews, and expert feedback, we ensure you're well-prepared to present yourself confidently. Our preparation covers common questions, cultural nuances, and professional presentation skills to maximize your success rate.</p>
+                        </div>
+                        <div class="service-icon"></div>
+                        <div class="service-image">
+                            <img src="../../assests/ser-4.png" alt="Interview Preparation">
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-content">
+                            <h3>Visa Processing</h3>
+                            <p>Getting a Japanese student visa requires careful submission of multiple documents and meeting strict regulations. Our visa experts guide you through every step of the process, from initial application to final approval. We ensure all requirements are met and help you avoid common pitfalls that could delay your application.</p>
+                        </div>
+                        <div class="service-icon"></div>
+                        <div class="service-image">
+                            <img src="../../assests/ser-5.png" alt="Japan Visa Processing">
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-content">
+                            <h3>Pre-Departure Briefing</h3>
+                            <p>Before you fly, we make sure you're fully prepared. Our pre-departure session covers everything from basic Japanese customs and etiquette to practical matters like banking, accommodation, and transportation. We provide comprehensive guidance to help you settle into Japanese life smoothly and confidently.</p>
+                        </div>
+                        <div class="service-icon"></div>
+                        <div class="service-image">
+                            <img src="../../assests/ser-6.png" alt="Pre-Departure Briefing">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    <section class="py-16 sm:py-24" id="services">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Timeline Container -->
+        <div class="relative lg:timeline-line">
+          <!-- Service Item 1 -->
+          <div class="relative mb-12 lg:mb-24">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-x-12 items-center">
+              <!-- Content -->
+              <div
+                class="bg-white p-8 rounded-2xl shadow-lg w-full z-10 order-2 lg:order-1"
+              >
+                <div class="flex items-center mb-4">
+                  <div
+                    class="bg-blue-100 text-blue-600 rounded-full p-3 flex-shrink-0"
+                  >
+                    <i class="fas fa-book-reader fa-lg w-6 text-center"></i>
+                  </div>
+                  <h3 class="ml-4 text-2xl font-bold text-gray-800">
+                    Language Preparation
+                  </h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                  Our comprehensive language training programs are designed to
+                  equip you with the Japanese language skills necessary to
+                  succeed in your academic journey. We offer structured courses
+                  that focus on practical communication skills, with emphasis on
+                  speaking, listening, reading, and writing. Our experienced
+                  instructors use interactive teaching methods to ensure you
+                  gain confidence in using Japanese in real-world situations.
+                </p>
+              </div>
+              <!-- Image -->
+              <div class="w-full mt-8 lg:mt-0 order-1 lg:order-2">
+                <img
+                  src="../../assests/classroom.png"
+                  alt="Language Preparation Classroom"
+                  class="rounded-2xl shadow-lg w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            <!-- Timeline Dot -->
+            <div
+              class="hidden lg:block absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-blue-100 border-4 border-blue-500 rounded-full z-20"
+            ></div>
+          </div>
+
+          <!-- Service Item 2 -->
+          <div class="relative mb-12 lg:mb-24">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-x-12 items-center">
+              <!-- Image -->
+              <div class="w-full order-1 lg:order-1">
+                <img
+                  src="../../assests/ser-2.png"
+                  alt="Documentation Support"
+                  class="rounded-2xl shadow-lg w-full h-auto object-cover"
+                />
+              </div>
+              <!-- Content -->
+              <div
+                class="bg-white p-8 rounded-2xl shadow-lg w-full z-10 mt-8 lg:mt-0 order-2 lg:order-2"
+              >
+                <div class="flex items-center mb-4">
+                  <div
+                    class="bg-green-100 text-green-600 rounded-full p-3 flex-shrink-0"
+                  >
+                    <i class="fas fa-file-alt fa-lg w-6 text-center"></i>
+                  </div>
+                  <h3 class="ml-4 text-2xl font-bold text-gray-800">
+                    Documentation Support
+                  </h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                  Navigating Japanese documentation can be tricky, especially
+                  with language and format differences. Our expert team will
+                  guide you through each step of the documentation process,
+                  ensuring all your paperwork is accurate, complete, and
+                  submitted on time. We provide comprehensive support for visa
+                  applications, university admissions, and other essential
+                  documents.
+                </p>
+              </div>
+            </div>
+            <!-- Timeline Dot -->
+            <div
+              class="hidden lg:block absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-blue-100 border-4 border-blue-500 rounded-full z-20"
+            ></div>
+          </div>
+
+          <!-- Service Item 3 -->
+          <div class="relative mb-12 lg:mb-24">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-x-12 items-center">
+              <!-- Content -->
+              <div
+                class="bg-white p-8 rounded-2xl shadow-lg w-full z-10 order-2 lg:order-1"
+              >
+                <div class="flex items-center mb-4">
+                  <div
+                    class="bg-purple-100 text-purple-600 rounded-full p-3 flex-shrink-0"
+                  >
+                    <i class="fas fa-university fa-lg w-6 text-center"></i>
+                  </div>
+                  <h3 class="ml-4 text-2xl font-bold text-gray-800">
+                    University Matching
+                  </h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                  Finding the right university is crucial for your academic
+                  success. We carefully analyze your academic background, career
+                  goals, and personal preferences to match you with the most
+                  suitable Japanese universities. Our extensive database and
+                  partnerships with top institutions ensure you get the best
+                  opportunities aligned with your aspirations.
+                </p>
+              </div>
+              <!-- Image -->
+              <div class="w-full mt-8 lg:mt-0 order-1 lg:order-2">
+                <img
+                  src="../../assests/ser-3.png"
+                  alt="University Campus"
+                  class="rounded-2xl shadow-lg w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            <!-- Timeline Dot -->
+            <div
+              class="hidden lg:block absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-blue-100 border-4 border-blue-500 rounded-full z-20"
+            ></div>
+          </div>
+
+          <!-- Service Item 4 -->
+          <div class="relative mb-12 lg:mb-24">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-x-12 items-center">
+              <!-- Image -->
+              <div class="w-full order-1 lg:order-1">
+                <img
+                  src="../../assests/ser-4.png"
+                  alt="Interview Preparation"
+                  class="rounded-2xl shadow-lg w-full h-auto object-cover"
+                />
+              </div>
+              <!-- Content -->
+              <div
+                class="bg-white p-8 rounded-2xl shadow-lg w-full z-10 mt-8 lg:mt-0 order-2 lg:order-2"
+              >
+                <div class="flex items-center mb-4">
+                  <div
+                    class="bg-yellow-100 text-yellow-600 rounded-full p-3 flex-shrink-0"
+                  >
+                    <i class="fas fa-microphone-alt fa-lg w-6 text-center"></i>
+                  </div>
+                  <h3 class="ml-4 text-2xl font-bold text-gray-800">
+                    Interview Preparation
+                  </h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                  University and embassy interviews are critical, and we help
+                  you master them. Through role-playing sessions, mock
+                  interviews, and expert feedback, we ensure you're
+                  well-prepared to present yourself confidently. Our preparation
+                  covers common questions, cultural nuances, and professional
+                  presentation skills to maximize your success rate.
+                </p>
+              </div>
+            </div>
+            <!-- Timeline Dot -->
+            <div
+              class="hidden lg:block absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-blue-100 border-4 border-blue-500 rounded-full z-20"
+            ></div>
+          </div>
+
+          <!-- Service Item 5 -->
+          <div class="relative mb-12 lg:mb-24">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-x-12 items-center">
+              <!-- Content -->
+              <div
+                class="bg-white p-8 rounded-2xl shadow-lg w-full z-10 order-2 lg:order-1"
+              >
+                <div class="flex items-center mb-4">
+                  <div
+                    class="bg-red-100 text-red-600 rounded-full p-3 flex-shrink-0"
+                  >
+                    <i class="fas fa-passport fa-lg w-6 text-center"></i>
+                  </div>
+                  <h3 class="ml-4 text-2xl font-bold text-gray-800">
+                    Visa Processing
+                  </h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                  Getting a Japanese student visa requires careful submission of
+                  multiple documents and meeting strict regulations. Our visa
+                  experts guide you through every step of the process, from
+                  initial application to final approval. We ensure all
+                  requirements are met and help you avoid common pitfalls that
+                  could delay your application.
+                </p>
+              </div>
+              <!-- Image -->
+              <div class="w-full mt-8 lg:mt-0 order-1 lg:order-2">
+                <img
+                  src="../../assests/ser-5.png"
+                  alt="Japan Visa Processing"
+                  class="rounded-2xl shadow-lg w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            <!-- Timeline Dot -->
+            <div
+              class="hidden lg:block absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-blue-100 border-4 border-blue-500 rounded-full z-20"
+            ></div>
+          </div>
+
+          <!-- Service Item 6 -->
+          <div class="relative">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-x-12 items-center">
+              <!-- Image -->
+              <div class="w-full order-1 lg:order-1">
+                <img
+                  src="../../assests/ser-6.png"
+                  alt="Pre-Departure Briefing"
+                  class="rounded-2xl shadow-lg w-full h-auto object-cover"
+                />
+              </div>
+              <!-- Content -->
+              <div
+                class="bg-white p-8 rounded-2xl shadow-lg w-full z-10 mt-8 lg:mt-0 order-2 lg:order-2"
+              >
+                <div class="flex items-center mb-4">
+                  <div
+                    class="bg-green-100 text-green-600 rounded-full p-3 flex-shrink-0"
+                  >
+                    <i class="fas fa-plane-departure fa-lg w-6 text-center"></i>
+                  </div>
+                  <h3 class="ml-4 text-2xl font-bold text-gray-800">
+                    Pre-Departure Briefing
+                  </h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                  Before you fly, we make sure you're fully prepared. Our
+                  pre-departure session covers everything from basic Japanese
+                  customs and etiquette to practical matters like banking,
+                  accommodation, and transportation. We provide comprehensive
+                  guidance to help you settle into Japanese life smoothly and
+                  confidently.
+                </p>
+              </div>
+            </div>
+            <!-- Timeline Dot -->
+            <div
+              class="hidden lg:block absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-blue-100 border-4 border-blue-500 rounded-full z-20"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Our Services -->
+    <section class="why-choose">
+      <div class="container">
+        <h2>Why Choose Our Services</h2>
+        <p class="why-choose-subtitle">
+          We combine expertise, personalized attention, and a proven track
+          record to make your study abroad journey successful.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">👨‍🎓</div>
+            <h3>Expert Counselors</h3>
+            <p>
+              Our team consists of experienced professionals with deep knowledge
+              of Japanese education system and culture.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🏫</div>
+            <h3>University Partnerships</h3>
+            <p>
+              We maintain strong relationships with top Japanese universities,
+              providing you chances of admission.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🤝</div>
+            <h3>Continuous Support</h3>
+            <p>
+              Our services extend beyond admission, providing ongoing support
+              throughout your study period in Japan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to start your journey to Japan?</h2>
+        <p>
+          Join our specially designed classes to prepare you for success—guided
+          by experienced instructors and tailored to your goals.
+        </p>
+        <button class="cta-btn">Enroll in Our Classes Now</button>
+      </div>
+    </section>
+
+    <!-- Student Success Stories -->
+    <section class="success-stories" id="success">
+      <div class="container">
+        <div class="container-success">
+          <h2 class="section-title">Student Success Stories</h2>
+          <p class="section-subtitle">
+            Hear from our students who have successfully started their journey
+            in Japan
+          </p>
+          <div class="stories-container">
+            <div class="stories-slider" id="storiesSlider">
+              <div class="story-card">
+                <div class="story-header">
+                  <img
+                    src="../../assests/women1.png"
+                    alt="Aditya Bansal"
+                    class="story-avatar"
+                  />
+                  <div class="story-info">
+                    <h3>Aditya Bansal</h3>
+                    <p>Student at Tokyo University</p>
+                  </div>
+                </div>
+                <p class="story-text">
+                  "The guidance I received was exceptional. From university
+                  selection to visa processing, every step was handled
+                  professionally. Now I'm studying at my dream university in
+                  Tokyo!"
+                </p>
+                <div class="story-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-text">Read Full Story</span>
+                </div>
+              </div>
+              <div class="story-card translucent">
+                <div class="story-header">
+                  <img
+                    src="../../assests/women2.png"
+                    alt="Preet Chauhan"
+                    class="story-avatar"
+                  />
+                  <div class="story-info">
+                    <h3>Preet Chauhan</h3>
+                    <p>Student at Osaka University</p>
+                  </div>
+                </div>
+                <p class="story-text">
+                  "I was worried about the language barrier, but the test
+                  preparation program helped me pass JLPT N2. The support team
+                  was always available to help."
+                </p>
+                <div class="story-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-text">Read Full Story</span>
+                </div>
+              </div>
+              <div class="story-card translucent">
+                <div class="story-header">
+                  <img
+                    src="../../assests/women2.png"
+                    alt="Sneha Arora"
+                    class="story-avatar"
+                  />
+                  <div class="story-info">
+                    <h3>Sneha Arora</h3>
+                    <p>Student at Kyoto University</p>
+                  </div>
+                </div>
+                <p class="story-text">
+                  "The documentation support was incredible. They helped me
+                  prepare all required documents and even assisted with
+                  translation. Highly recommended!"
+                </p>
+                <div class="story-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-text">Read Full Story</span>
+                </div>
+              </div>
+              <div class="story-card translucent">
+                <div class="story-header">
+                  <img
+                    src="../../assests/women1.png"
+                    alt="Riya Mahajan"
+                    class="story-avatar"
+                  />
+                  <div class="story-info">
+                    <h3>Riya Mahajan</h3>
+                    <p>Student at Waseda University</p>
+                  </div>
+                </div>
+                <p class="story-text">
+                  "From the initial counseling to pre-departure briefing, the
+                  entire process was smooth. I felt confident and prepared when
+                  I arrived in Japan."
+                </p>
+                <div class="story-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-text">Read Full Story</span>
+                </div>
+              </div>
+              <div class="story-card translucent">
+                <div class="story-header">
+                  <img
+                    src="../../assests/women1.png"
+                    alt="Rahul Sharma"
+                    class="story-avatar"
+                  />
+                  <div class="story-info">
+                    <h3>Rahul Sharma</h3>
+                    <p>Student at Keio University</p>
+                  </div>
+                </div>
+                <p class="story-text">
+                  "The personalized approach and attention to detail made all
+                  the difference. I couldn't have achieved my dream without
+                  their support."
+                </p>
+                <div class="story-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-text">Read Full Story</span>
+                </div>
+              </div>
+              <div class="story-card translucent">
+                <div class="story-header">
+                  <img
+                    src="../../assests/women2.png"
+                    alt="Anita Patel"
+                    class="story-avatar"
+                  />
+                  <div class="story-info">
+                    <h3>Anita Patel</h3>
+                    <p>Student at Sophia University</p>
+                  </div>
+                </div>
+                <p class="story-text">
+                  "Their expertise in Japanese education system and culture
+                  preparation was invaluable. I felt ready for my new life in
+                  Japan."
+                </p>
+                <div class="story-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-text">Read Full Story</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stories-navigation">
+            <button class="stories-nav-btn" id="storiesPrevBtn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="stories-nav-btn" id="storiesNextBtn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>
+              Fill out the form and our team get back to you within 24 hours.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <span class="contact-value">+977 9845230943</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value"
+                    >info@globalstudynepal@gmail.com</span
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <span class="contact-label">Office</span>
+                  <span class="contact-value">Put your Location here</span>
+                </div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+              <a href="#" aria-label="Medium"><i class="fab fa-medium"></i></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h2>Book Free Counselling</h2>
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Your phone number"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="parentsPhone">Parents Phone</label>
+                  <input
+                    type="tel"
+                    id="parentsPhone"
+                    name="parentsPhone"
+                    placeholder="Parents phone number"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="service">Service</label>
+                  <select id="service" name="service" required>
+                    <option value="">Select services</option>
+                    <option value="language-preparation">
+                      Language Test Preparation
+                    </option>
+                    <option value="university-matching">
+                      University Matching
+                    </option>
+                    <option value="visa-processing">Visa Processing</option>
+                    <option value="interview-preparation">
+                      Interview Preparation
+                    </option>
+                    <option value="documentation">Documentation Support</option>
+                    <option value="pre-departure">
+                      Pre-Departure Briefing
+                    </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="qualification">Qualification</label>
+                  <select id="qualification" name="qualification" required>
+                    <option value="">Qualification</option>
+                    <option value="high-school">High School (+2)</option>
+                    <option value="bachelors">Bachelor's Degree</option>
+                    <option value="masters">Master's Degree</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="If you want to forward any message to our team you can drop a message here."
+                  rows="4"
+                ></textarea>
+              </div>
+              <div class="form-group checkbox-group">
+                <label for="consent">
+                  <input
+                    type="checkbox"
+                    id="consent"
+                    name="consent"
+                    required
+                  />I consent to receive communications about my inquiry and
+                  related educational services.</label
+                >
+              </div>
+              <button type="submit" class="submit-btn">Submit Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <i class="fas fa-arrow-up"></i>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Study Nepal</h3>
+            <p>
+              Nepal's premier educational consultancy specializing in helping
+              students achieve their dreams of studying in Japan.
+            </p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-google"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#services">Universities</a></li>
+              <li><a href="#success">Success Stories</a></li>
+              <li><a href="#contact">Resources</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Language Test Preparation</a></li>
+              <li><a href="#">University Matching</a></li>
+              <li><a href="#">Visa Processing</a></li>
+              <li><a href="#">Interview Preparation</a></li>
+              <li><a href="#">Documentation Support</a></li>
+              <li><a href="#">Pre-Departure Briefing</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <div class="footer-contact">
+              <p><i class="fas fa-phone"></i> 9875986348756</p>
+              <p><i class="fas fa-map-marker-alt"></i> kathmandu, Nepal</p>
+              <p>
+                <i class="fas fa-envelope"></i> info@globalstudynepal@gmail.com
+              </p>
+              <p><i class="fas fa-globe"></i> www.asnstudyabroad.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 ASN Study Abroad. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">English</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="service.js"></script>
+  </body>
+</html>

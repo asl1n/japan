@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASN Study Abroad - Study In Japan</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../global.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="../assests/logo.png" alt="ASN Study Abroad" class="logo">
+            </div>
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="../sidepage/about/about.html" class="nav-link">About Us</a></li>
+                    <li><a href="../sidepage/service/service.html" class="nav-link">Services</a></li>
+                    <li><a href="#success" class="nav-link">Success Stories</a></li>
+                    <li><a href="../sidepage/blog/blog.html" class="nav-link">Others</a></li>
+                </ul>
+            </nav>
+            <button class="contact-btn">Contact Us</button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section with Background Carousel -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-slide active"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+        </div>
+        
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Begin Your Study Journey in Japan with <span class="highlight">Us.</span></h1>
+            <p class="hero-subtitle"><h3>Begin your educational journey in Japan with Nepal's most trusted consultancy. We guide you through every step from test preparation to arrival in Japan.</h3></p>
+        </div>
+        
+        <div class="hero-dots">
+            <span class="hero-dot active" data-slide="0"></span>
+            <span class="hero-dot" data-slide="1"></span>
+            <span class="hero-dot" data-slide="2"></span>
+            <span class="hero-dot" data-slide="3"></span>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="sponsors">
+        <div class="container">
+            <div class="sponsors-grid">
+                <div class="sponsor-item">
+                    <span>Sponsor 1</span>
+                </div>
+                <div class="sponsor-item">
+                    <span>Sponsor 2</span>
+                </div>
+                <div class="sponsor-item">
+                    <span>Sponsor 3</span>
+                </div>
+                <div class="sponsor-item">
+                    <span>Sponsor 4</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>ABOUT US</h2>
+                    <p>At Abroad Study Nepal Pvt.Ltd, we specialize in guiding ambitious students on their journey to higher education in Japan. From helping you prepare the right documents to securing your admission into prestigious universities, we are with you at every step. Our dedicated team ensures your transition is smooth—from boarding the plane, to entering the classroom, and finally, tossing your cap at graduation. With years of experience and a passion for empowering global futures, we don't just send students abroad—we shape lives. Let your journey begin with us.</p>
+                    <a href="#" class="learn-more-link">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="../assests/about.png" alt="Office Interior">
+                </div>
+                <div class="number-badge">
+                    <i class="fas fa-heart"></i>
+                    <span class="number">#1</span>
+                    <span class="text">CONSULTANCY FOR<br>STUDY IN JAPAN</span>
+                </div>
+            </div>
+       
+    </section>
+
+    <!-- Journey Section -->
+    <section class="journey">
+        <div class="container">
+            <h2 class="section-title">Your Journey to Japan</h2>
+            <div class="journey-steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Counselling</h3>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Test Preparation</h3>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Application</h3>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3>Visa</h3>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Pre-Departure</h3>
+                </div>
+            </div>
+            <button class="learn-more-btn"><span>Learn More</span></button>
+        </div>
+    </section>
+
+    <!-- Reasons Section -->
+    <section class="reasons">
+        <div class="container">
+            <div class="reasons-content">
+                <div class="reasons-text">
+                    <h2 class="section-title">Reasons To Choose Japan For Your Studies?</h2>
+                    <p>Discover the unique advantages that make Japan an exceptional destination for international students.</p>
+                    <div class="card-navigation">
+                        <button class="nav-btn" id="prevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="nav-btn" id="nextBtn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="reasons-cards">
+                    <div class="cards-container" id="cardsContainer">
+                        <div class="reason-card academic">
+                            <div class="card-icon">
+                                <i class="fas fa-graduation-cap icon-pad"></i>
+                            </div>
+                            <h3>Academic Excellence</h3>
+                            <p>Home to world-class universities with cutting-edge research </p>
+                        </div>
+                        <div class="reason-card technology translucent">
+                            <div class="card-icon">
+                                <i class="fas fa-laptop-code icon-pad"></i>
+                            </div>
+                            <h3>Modern Technology</h3>
+                            <p>Experience cutting-edge technology and innovation in one of the world's most advanced nations.</p>
+                        </div>
+                        <div class="reason-card innovation translucent">
+                            <div class="card-icon">
+                                <i class="fas fa-lightbulb icon-pad"></i>
+                            </div>
+                            <h3>Innovation Hub</h3>
+                            <p>Be part of groundbreaking research and development in various fields of science and technology.</p>
+                        </div>
+                        <div class="reason-card culture translucent">
+                            <div class="card-icon">
+                                <i class="fas fa-torii-gate"></i>
+                            </div>
+                            <h3>Rich Culture</h3>
+                            <p>Immerse yourself in Japan's unique blend of traditional culture and modern lifestyle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Student Services</h2>
+            <p class="section-subtitle">Comprehensive support for every stage of your educational journey to Japan</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Language Test Preparation</h3>
+                    <p>Comprehensive preparation for JLPT, NAT-TEST, and other Japanese language proficiency tests with expert guidance and practice materials.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>University Matching</h3>
+                    <p>Find the perfect university that matches your academic goals, budget, and career aspirations with our extensive database.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3>Visa Processing</h3>
+                    <p>Complete visa application support including documentation, interview preparation, and submission assistance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Interview Preparation</h3>
+                    <p>Comprehensive interview coaching to help you confidently navigate university and visa interviews with expert tips.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Documentation Support</h3>
+                    <p>Complete assistance with document preparation, authentication, translation, and submission for your application.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <h3>Pre-Departure Briefing</h3>
+                    <p>Essential guidance on accommodation, cultural orientation, banking, and other practical aspects of living in Japan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA and Statistics Section -->
+    <section class="cta-statistics-section">
+        <div class="cta-statistics-bg"></div>
+        <div class="container">
+            <div class="cta-statistics-content">
+                <div class="cta-image-container">
+                    <img src="../assests/women2.png" alt="Student working in modern office space" class="cta-main-image">
+                </div>
+                <div class="cta-card">
+                    <h2>Your Hard Work Deserves the Right Direction!</h2>
+                    <p>Now that you've achieved academic success, it's the perfect moment to take the next step. We're here to help you move forward with confidence.</p>
+                    <button class="cta-apply-btn">Apply Now</button>
+                </div>
+            </div>
+            <div class="statistics-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <div class="stat-number">80+</div>
+                    <div class="stat-label">Japan Student Visas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Partner Institutions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Student Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories" id="success">
+        
+            <div class="container-success">
+                <h2 class="section-title">Student Success Stories</h2>
+                <p class="section-subtitle">Hear from our students who have successfully started their journey in Japan</p>
+                <div class="stories-container">
+                    <div class="stories-slider" id="storiesSlider">
+                        <div class="story-card">
+                            <div class="story-header">
+                                <img src="../assests/women2.png" alt="Aditya Bansal" class="story-avatar">
+                                <div class="story-info">
+                                    <h3>Aditya Bansal</h3>
+                                    <p>Student at Tokyo University</p>
+                                </div>
+                            </div>
+                            <p class="story-text">"The guidance I received was exceptional. From university selection to visa processing, every step was handled professionally. Now I'm studying at my dream university in Tokyo!"</p>
+                            <div class="story-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">Read Full Story</span>
+                            </div>
+                        </div>
+                        <div class="story-card translucent">
+                            <div class="story-header">
+                                <img src="../assests/women2.png" alt="Preet Chauhan" class="story-avatar">
+                                <div class="story-info">
+                                    <h3>Preet Chauhan</h3>
+                                    <p>Student at Osaka University</p>
+                                </div>
+                            </div>
+                            <p class="story-text">"I was worried about the language barrier, but the test preparation program helped me pass JLPT N2. The support team was always available to help."</p>
+                            <div class="story-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">Read Full Story</span>
+                            </div>
+                        </div>
+                        <div class="story-card translucent">
+                            <div class="story-header">
+                                <img src="../assests/women2.png" alt="Sneha Arora" class="story-avatar">
+                                <div class="story-info">
+                                    <h3>Sneha Arora</h3>
+                                    <p>Student at Kyoto University</p>
+                                </div>
+                            </div>
+                            <p class="story-text">"The documentation support was incredible. They helped me prepare all required documents and even assisted with translation. Highly recommended!"</p>
+                            <div class="story-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">Read Full Story</span>
+                            </div>
+                        </div>
+                        <div class="story-card translucent">
+                            <div class="story-header">
+                                <img src="../assests/women2.png" alt="Riya Mahajan" class="story-avatar">
+                                <div class="story-info">
+                                    <h3>Riya Mahajan</h3>
+                                    <p>Student at Waseda University</p>
+                                </div>
+                            </div>
+                            <p class="story-text">"From the initial counseling to pre-departure briefing, the entire process was smooth. I felt confident and prepared when I arrived in Japan."</p>
+                            <div class="story-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">Read Full Story</span>
+                            </div>
+                        </div>
+                        <div class="story-card translucent">
+                            <div class="story-header">
+                                <img src="../assests/women2.png" alt="Rahul Sharma" class="story-avatar">
+                                <div class="story-info">
+                                    <h3>Rahul Sharma</h3>
+                                    <p>Student at Keio University</p>
+                                </div>
+                            </div>
+                            <p class="story-text">"The personalized approach and attention to detail made all the difference. I couldn't have achieved my dream without their support."</p>
+                            <div class="story-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">Read Full Story</span>
+                            </div>
+                        </div>
+                        <div class="story-card translucent">
+                            <div class="story-header">
+                                <img src="../assests/women2.png" alt="Anita Patel" class="story-avatar">
+                                <div class="story-info">
+                                    <h3>Anita Patel</h3>
+                                    <p>Student at Sophia University</p>
+                                </div>
+                            </div>
+                            <p class="story-text">"Their expertise in Japanese education system and culture preparation was invaluable. I felt ready for my new life in Japan."</p>
+                            <div class="story-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">Read Full Story</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stories-navigation">
+                    <button class="stories-nav-btn" id="storiesPrevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="stories-nav-btn" id="storiesNextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Fill out the form and our team get back to you within 24 hours.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+977 9845230943</span>
+                            </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">info@globalstudynepal@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span class="contact-label">Office</span>
+                            <span class="contact-value">Put your Location here</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="Medium"><i class="fab fa-medium"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Book Free Counselling</h2>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="parentsPhone">Parents Phone</label>
+                            <input type="tel" id="parentsPhone" name="parentsPhone" placeholder="Parents phone number">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service">Service</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select services</option>
+                                <option value="language-preparation">Language Test Preparation</option>
+                                <option value="university-matching">University Matching</option>
+                                <option value="visa-processing">Visa Processing</option>
+                                <option value="interview-preparation">Interview Preparation</option>
+                                <option value="documentation">Documentation Support</option>
+                                <option value="pre-departure">Pre-Departure Briefing</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="qualification">Qualification</label>
+                            <select id="qualification" name="qualification" required>
+                                <option value="">Qualification</option>
+                                <option value="high-school">High School (+2)</option>
+                                <option value="bachelors">Bachelor's Degree</option>
+                                <option value="masters">Master's Degree</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="If you want to forward any message to our team you can drop a message here." rows="4"></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        
+                        <label for="consent"><input class="checkbox1" type="checkbox" id="consent" name="consent" required>I consent to receive communications about my inquiry and related educational services.</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Abroad Study Nepal</h3>
+                    <p>Nepal's premier educational consultancy specializing in helping students achieve their dreams of studying in Japan.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#services">Universities</a></li>
+                        <li><a href="#success">Success Stories</a></li>
+                        <li><a href="#contact">Resources</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Language Test Preparation</a></li>
+                        <li><a href="#">University Matching</a></li>
+                        <li><a href="#">Visa Processing</a></li>
+                        <li><a href="#">Interview Preparation</a></li>
+                        <li><a href="#">Documentation Support</a></li>
+                        <li><a href="#">Pre-Departure Briefing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> 9875986348756</p>
+                        <p><i class="fas fa-map-marker-alt"></i> kathmandu, Nepal</p>
+                        <p><i class="fas fa-envelope"></i> info@globalstudynepal@gmail.com</p>
+                        <p><i class="fas fa-globe"></i> www.asnstudyabroad.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ASN Study Abroad. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">English</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

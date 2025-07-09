@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASN Reusable Navigation Bar</title>
+
+    <!-- Tailwind CSS for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/lucide-icons@latest/dist/lucide.js"></script>
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        --primary-color: #143249;
+        --secondary-color: #00c2cb;
+        --accent-color: #00e0f8;
+        --grey-border: #a4a0a0;
+      }
+
+      /* * The skewed background shape for the logo.
+         * This provides the solid blue background only for the logo area.
+        */
+      .logo-bg-shape {
+        background-color: var(--primary-color);
+        transform: skewX(-30deg);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -10rem;
+        right: 0;
+        z-index: 10;
+      }
+
+      /* * The grey border on the right of the logo's skewed shape.
+        */
+      .logo-bg-shape::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -0.5rem; /* Position it just outside the parent */
+        width: 0.5rem;
+        background-color: var(--grey-border);
+      }
+
+      /* * The skewed background shape for the top contact bar.
+        */
+      .contact-bar-bg-shape {
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -4rem; /* Start it before the text content */
+        right: -4rem; /* Extend it beyond the text content */
+        transform: skewX(-30deg);
+        z-index: 10;
+      }
+
+      /* * Style for the active navigation link.
+         * A simple bottom border to indicate the current page.
+        */
+      .nav-link.active {
+        color: var(--secondary-color);
+        font-weight: 600;
+        position: relative;
+      }
+
+      .nav-link.active::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background-color: var(--secondary-color);
+        border-radius: 2px;
+      }
+
+      /* Gradient for the contact button */
+      .contact-btn-gradient {
+        background-image: linear-gradient(
+          to right,
+          var(--secondary-color),
+          var(--accent-color)
+        );
+      }
+
+      /* Adding a subtle text shadow to make links more readable on various backgrounds */
+      .readable-text {
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ================================================================== -->
+    <!-- REUSABLE HEADER COMPONENT                                          -->
+    <!-- ================================================================== -->
+    <header class="relative h-24 w-full z-50 flex">
+      <!-- 1. Logo Section (Left Part) -->
+      <div class="relative w-1/3 max-w-lg flex items-center">
+        <div class="logo-bg-shape"></div>
+        <a href="index.html" class="relative z-20 pl-4 md:pl-64">
+          <div class="nav-brand">
+            <img
+              src="../assests/logo.png"
+              alt="ASN Study Abroad"
+              class="logo"
+            />
+          </div>
+        </a>
+      </div>
+
+      <!-- 2. Main Navigation Section (Right Part) -->
+      <div class="flex-1 flex flex-col">
+        <!-- Bottom Bar with Nav Links & Button -->
+        <div
+          class="bottom-bar flex-1 flex items-center justify-between pl-8 pr-4"
+        >
+          <!-- Desktop Menu -->
+          <nav class="hidden lg:flex items-center h-full">
+            <ul
+              class="flex items-center space-x-8 text-gray-800 font-semibold readable-text"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="nav-link transition-colors hover:text-[color:var(--secondary-color)]"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="nav-link flex items-center gap-1 transition-colors hover:text-[color:var(--secondary-color)]"
+                >
+                  About Us <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="nav-link transition-colors hover:text-[color:var(--secondary-color)]"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="success.html"
+                  class="nav-link transition-colors hover:text-[color:var(--secondary-color)]"
+                  >Success Stories</a
+                >
+              </li>
+              <li>
+                <a
+                  href="others.html"
+                  class="nav-link flex items-center gap-1 transition-colors hover:text-[color:var(--secondary-color)]"
+                >
+                  Others <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Spacer for Desktop -->
+          <div class="hidden lg:block flex-grow"></div>
+
+          <!-- Contact Button -->
+          <div class="hidden lg:flex items-center">
+            <a
+              href="contact.html"
+              class="contact-btn-gradient text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:opacity-90 transition-opacity"
+            >
+              Contact Us
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden w-full flex justify-end items-center">
+            <button
+              id="mobile-menu-button"
+              class="text-gray-800 bg-white/50 backdrop-blur-sm p-2 rounded-md"
+            >
+              <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu (Hidden by default, appears on click) -->
+      <div
+        id="mobile-menu"
+        class="hidden lg:hidden bg-white/95 backdrop-blur-md shadow-xl absolute top-24 left-0 w-full rounded-b-lg"
+      >
+        <ul class="flex flex-col items-center p-4 space-y-2">
+          <li>
+            <a
+              href="index.html"
+              class="nav-link block text-gray-700 py-3 text-lg w-full text-center hover:bg-gray-200/50 rounded-md"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="nav-link block text-gray-700 py-3 text-lg w-full text-center hover:bg-gray-200/50 rounded-md"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="services.html"
+              class="nav-link block text-gray-700 py-3 text-lg w-full text-center hover:bg-gray-200/50 rounded-md"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="success.html"
+              class="nav-link block text-gray-700 py-3 text-lg w-full text-center hover:bg-gray-200/50 rounded-md"
+              >Success Stories</a
+            >
+          </li>
+          <li>
+            <a
+              href="others.html"
+              class="nav-link block text-gray-700 py-3 text-lg w-full text-center hover:bg-gray-200/50 rounded-md"
+              >Others</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="contact-btn-gradient mt-4 inline-block text-white font-semibold px-8 py-3 rounded-lg shadow-md w-full text-center"
+            >
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <script>
+      // Initialize Lucide Icons
+      lucide.createIcons();
+
+      // --- Reusable Navigation Script ---
+
+      // 1. Mobile Menu Toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // 2. Active Navigation Link Highlighting
+      document.addEventListener("DOMContentLoaded", () => {
+        const currentPage =
+          window.location.pathname.split("/").pop() || "index.html";
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        navLinks.forEach((link) => {
+          const linkPage = link.getAttribute("href").split("/").pop();
+          if (linkPage === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
